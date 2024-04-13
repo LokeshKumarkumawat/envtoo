@@ -7,7 +7,15 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:envetoot": "node dist/envetoot/server/server.mjs"
+    "serve:ssr:envetoot": "node dist/envetoot/server/server.mjs",
+    "build-dev": "ng build",
+    "dev:ssr": "ng run test:serve-ssr",
+    "serve:ssr": "node dist/test/server/main.js",
+    "build:ssr": "ng build && ng run test:server",
+    "prerender": "ng run test:prerender",
+    "vercel-build": "npm run build:ssr"
+
+    
   },
   "private": true,
   "dependencies": {
