@@ -8,12 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:envetoot": "node dist/envetoot/server/server.mjs",
-    "build-dev": "ng build",
-    "dev:ssr": "ng run envetoot:serve-ssr",
-    "serve:ssr": "node dist/envetoot/server/main.js",
-    "build:ssr": "ng build && ng run envetoot:server",
-    "prerender": "ng run envetoot:prerender",
-    "vercel-build": "npm run build:ssr"
+
 
 
   },
